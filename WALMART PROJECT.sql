@@ -21,7 +21,7 @@ FROM WALMART..['Global_Superstore']
 ORDER BY 3,2
 
 --2.Sales and Profit Analysis
---**Purpose: Provide a high-level summary of the company’s overall performance.
+--**Purpose: Provide a high-level summary of the companyâ€™s overall performance.
 --**Insight: Knowing the total sales and profit helps in determining the store's overall financial success.
 
 --Calculating the total sales across all records
@@ -209,7 +209,7 @@ GROUP BY YEAR_,MONTH(Order_Date)
 ORDER BY 1,2
 
 --September, October, November and December are peak months. 
---Finding products with high sales in peak months (Sept-Dec) for 2014 in the United States
+--Finding products with high sales in peak months (Sept-Dec) for 2011 to 2014 in the United States
 SELECT YEAR_, MONTH(ORDER_DATE) AS MONTH, PRODUCT_NAME, SUM(SALES) AS TOTAL_SALES
 FROM WALMART..['Global_Superstore']
 WHERE Country='United States' AND MONTH(Order_Date) >=9
